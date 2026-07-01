@@ -1,0 +1,1515 @@
+[
+  {
+    "id": "essentials_0001",
+    "scene": "essentials",
+    "is_essential": true,
+    "tier": 1,
+    "latin": "Assalomu alaykum.",
+    "cyrillic": "Ассалому алайкум.",
+    "pronunciation": "as-sa-LO-mu a-LAY-kum",
+    "chinese": "您好。（穆斯林礼）",
+    "literal": "愿平安降临于你（阿拉伯语借词）",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0001_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0001_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "最通用的正式问候，进店、见长辈、任何场合都得体。",
+    "likely_responses": [
+      { "latin": "Vaalaykum assalom.", "cyrillic": "Ваалайкум ассалом.", "trans": "va-a-LAY-kum as-sa-LOM", "cn": "你也平安（标准回应）" }
+    ],
+    "slots": [],
+    "local_note": "对乌兹别克族、老一辈、清真寺场合最加分。说出这句，对方立刻知道你尊重当地文化。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0002",
+    "scene": "essentials",
+    "is_essential": true,
+    "tier": 1,
+    "latin": "Salom!",
+    "cyrillic": "Салом!",
+    "pronunciation": "sa-LOM",
+    "chinese": "你好！（随意）",
+    "literal": "平安（Assalomu alaykum 的短形式）",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0002_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0002_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "对同龄人、朋友、年轻店员的轻松招呼。",
+    "likely_responses": [
+      { "latin": "Salom!", "cyrillic": "Салом!", "trans": "sa-LOM", "cn": "你好！" }
+    ],
+    "slots": [],
+    "local_note": "年轻一代之间最常用，比 Assalomu alaykum 轻松。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0003",
+    "scene": "essentials",
+    "is_essential": true,
+    "tier": 1,
+    "latin": "Rahmat.",
+    "cyrillic": "Раҳмат.",
+    "pronunciation": "rah-MAT",
+    "chinese": "谢谢。",
+    "literal": "恩慈、感激（阿拉伯语借词）",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0003_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0003_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "万能，任何场合都合适。",
+    "likely_responses": [
+      { "latin": "Arzimaydi.", "cyrillic": "Арзимайди.", "trans": "ar-zi-MAY-di", "cn": "不客气。" }
+    ],
+    "slots": [
+      { "label": "非常感谢", "swap": "Katta rahmat.", "trans": "kat-TA rah-MAT" }
+    ],
+    "local_note": "全国通用，店主/司机/服务员多半以 Arzimaydi 回敬。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0004",
+    "scene": "essentials",
+    "is_essential": true,
+    "tier": 1,
+    "latin": "Iltimos.",
+    "cyrillic": "Илтимос.",
+    "pronunciation": "il-ti-MOS",
+    "chinese": "请。 / 拜托。",
+    "literal": "请求",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0004_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0004_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "请求时贴在句尾或单说，让语气更柔。",
+    "likely_responses": [],
+    "slots": [],
+    "local_note": "如 “Suv, iltimos”（请来杯水）。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0005",
+    "scene": "essentials",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Ha.",
+    "cyrillic": "Ҳа.",
+    "pronunciation": "HA",
+    "chinese": "是的。 / 对。",
+    "literal": "是",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0005_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0005_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "肯定应答。更礼貌可说 “Ha, albatta”（是，当然）。",
+    "likely_responses": [],
+    "slots": [],
+    "local_note": "点头 + Ha 最自然。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0006",
+    "scene": "essentials",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Yoʻq.",
+    "cyrillic": "Йўқ.",
+    "pronunciation": "YO'Q",
+    "chinese": "不。 / 没有。",
+    "literal": "不存在 / 无",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0006_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0006_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "否定应答，也表示“没有”。",
+    "likely_responses": [],
+    "slots": [],
+    "local_note": "oʻ 发音接近汉语“哦”的圆唇短音。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0007",
+    "scene": "essentials",
+    "is_essential": true,
+    "tier": 1,
+    "latin": "Kechirasiz.",
+    "cyrillic": "Кечирасиз.",
+    "pronunciation": "ke-chi-ra-SIZ",
+    "chinese": "对不起。 / 劳驾。",
+    "literal": "请您原谅（kechir 原谅 + -asiz 您）",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0007_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0007_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "道歉，也用于礼貌地叫住陌生人问路。",
+    "likely_responses": [
+      { "latin": "Zarari yoʻq.", "cyrillic": "Зарари йўқ.", "trans": "za-ra-RI yo'q", "cn": "没关系。" }
+    ],
+    "slots": [],
+    "local_note": "想拦人问路时先说这句，比直接开口礼貌得多。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0008",
+    "scene": "essentials",
+    "is_essential": true,
+    "tier": 1,
+    "latin": "Tushunmadim.",
+    "cyrillic": "Тушунмадим.",
+    "pronunciation": "tu-shun-ma-DIM",
+    "chinese": "我没听懂。",
+    "literal": "我没理解（tushun 理解 + -ma 否定 + -dim 我·过去）",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0008_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0008_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "听不懂时最直接的一句。",
+    "likely_responses": [
+      { "latin": "Sekinroq aytaman.", "cyrillic": "Секинроқ айтаман.", "trans": "se-kin-ROQ ay-ta-MAN", "cn": "我说慢点。" }
+    ],
+    "slots": [],
+    "local_note": "配合摊手表情，对方一般会放慢或改用手势。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0009",
+    "scene": "essentials",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Sekinroq gapiring, iltimos.",
+    "cyrillic": "Секинроқ гапиринг, илтимос.",
+    "pronunciation": "se-kin-ROQ ga-pi-RING il-ti-MOS",
+    "chinese": "请说慢一点。",
+    "literal": "更慢地说，请（sekin 慢 + -roq 更 · gapir 说 + -ing 您）",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0009_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0009_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "听不清时请对方放慢。",
+    "likely_responses": [
+      { "latin": "Xoʻp, mayli.", "cyrillic": "Хўп, майли.", "trans": "XO'P, MAY-li", "cn": "好的，行。" }
+    ],
+    "slots": [],
+    "local_note": "-roq 是比较级后缀，等于“更…”。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0010",
+    "scene": "essentials",
+    "is_essential": true,
+    "tier": 1,
+    "latin": "Xayr.",
+    "cyrillic": "Хайр.",
+    "pronunciation": "KHAYR",
+    "chinese": "再见。",
+    "literal": "好、善（告别语）",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0010_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0010_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "通用告别。",
+    "likely_responses": [
+      { "latin": "Koʻrishguncha!", "cyrillic": "Кўришгунча!", "trans": "ko-rish-GUN-cha", "cn": "回头见！" }
+    ],
+    "slots": [],
+    "local_note": "x 发音是喉部摩擦音，接近“喝”开头的气音。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0011",
+    "scene": "essentials",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Marhamat.",
+    "cyrillic": "Мархамат.",
+    "pronunciation": "mar-ha-MAT",
+    "chinese": "请。（给您 / 请用 / 请进）",
+    "literal": "恩惠、慈悲（递东西、让路、请人用餐时说）",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0011_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0011_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "递东西给对方、请对方先请时用。",
+    "likely_responses": [
+      { "latin": "Rahmat.", "cyrillic": "Раҳмат.", "trans": "rah-MAT", "cn": "谢谢。" }
+    ],
+    "slots": [],
+    "local_note": "相当于英语的 “here you are / please go ahead”。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0012",
+    "scene": "essentials",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Yaxshimisiz?",
+    "cyrillic": "Яхшимисиз?",
+    "pronunciation": "yakh-shi-mi-SIZ",
+    "chinese": "您好吗？",
+    "literal": "您好吗（yaxshi 好 + -misiz 您·疑问）",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0012_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0012_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "问候后续的寒暄。",
+    "likely_responses": [
+      { "latin": "Rahmat, yaxshi. Oʻzingizchi?", "cyrillic": "Раҳмат, яхши. Ўзингизчи?", "trans": "rah-MAT yakh-SHI, o-zin-giz-CHI", "cn": "谢谢，好。您呢？" }
+    ],
+    "slots": [],
+    "local_note": "-mi 是疑问后缀，加在词尾就成了是非问句。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0013",
+    "scene": "essentials",
+    "is_essential": true,
+    "tier": 1,
+    "latin": "Inglizcha bilasizmi?",
+    "cyrillic": "Инглизча биласизми?",
+    "pronunciation": "in-GLIZ-cha bi-la-siz-MI",
+    "chinese": "您会英语吗？",
+    "literal": "英语您知道吗（Inglizcha 英语 · bil 知道 + -asiz 您 + -mi 疑问）",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0013_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0013_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "开口前先探路，避免尬聊。",
+    "likely_responses": [
+      { "latin": "Ozgina.", "cyrillic": "Озгина.", "trans": "oz-gi-NA", "cn": "一点点。" },
+      { "latin": "Yoʻq, ruscha bilaman.", "cyrillic": "Йўқ, русча биламан.", "trans": "yo'q, RUS-cha bi-la-MAN", "cn": "不会，我会俄语。" }
+    ],
+    "slots": [
+      { "label": "会俄语吗", "swap": "Ruscha bilasizmi?", "trans": "RUS-cha bi-la-siz-MI" }
+    ],
+    "local_note": "在乌兹别克斯坦俄语接受度很高，英语在年轻人和景点更通。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "essentials_0014",
+    "scene": "essentials",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Yana bir marta ayting, iltimos.",
+    "cyrillic": "Яна бир марта айтинг, илтимос.",
+    "pronunciation": "ya-NA bir mar-TA AY-ting il-ti-MOS",
+    "chinese": "请再说一遍。",
+    "literal": "再一次说，请（yana 再 · bir marta 一次 · ayt 说 + -ing 您）",
+    "audio": { "phrase_normal": "/audio/essentials/essentials_0014_normal.mp3", "phrase_slow": "/audio/essentials/essentials_0014_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "没听清时请对方重复。",
+    "likely_responses": [
+      { "latin": "Albatta.", "cyrillic": "Албатта.", "trans": "al-bat-TA", "cn": "当然。" }
+    ],
+    "slots": [],
+    "local_note": "配合 Tushunmadim 一起用效果最好。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+
+  {
+    "id": "money_0001",
+    "scene": "money",
+    "is_essential": true,
+    "tier": 1,
+    "latin": "Qancha turadi?",
+    "cyrillic": "Қанча туради?",
+    "pronunciation": "QAN-cha tu-ra-DI",
+    "chinese": "多少钱？",
+    "literal": "多少·值（qancha 多少 · tur 值/站 + -adi 它）",
+    "audio": { "phrase_normal": "/audio/money/money_0001_normal.mp3", "phrase_slow": "/audio/money/money_0001_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "问价万能句。也可只说 “Qancha?”。",
+    "likely_responses": [
+      { "latin": "Oʻn ming soʻm.", "cyrillic": "Ўн минг сўм.", "trans": "o'n MING so'm", "cn": "一万苏姆。" }
+    ],
+    "slots": [],
+    "local_note": "用乌兹别克语问价，摊主常给比纯外国人更公道的初价。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "money_0002",
+    "scene": "money",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Hammasi qancha?",
+    "cyrillic": "Ҳаммаси қанча?",
+    "pronunciation": "ham-ma-SI QAN-cha",
+    "chinese": "一共多少钱？",
+    "literal": "全部·多少（hammasi 全部）",
+    "audio": { "phrase_normal": "/audio/money/money_0002_normal.mp3", "phrase_slow": "/audio/money/money_0002_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "买多样东西结账时问总价。",
+    "likely_responses": [
+      { "latin": "Ellik ming soʻm.", "cyrillic": "Эллик минг сўм.", "trans": "el-LIK ming so'm", "cn": "五万苏姆。" }
+    ],
+    "slots": [],
+    "local_note": "soʻm（苏姆）是货币单位，面额大，听清万位很重要。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "money_0003",
+    "scene": "money",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Karta bilan toʻlasam boʻladimi?",
+    "cyrillic": "Карта билан тўласам бўладими?",
+    "pronunciation": "KAR-ta bi-LAN to-la-SAM bo-la-di-MI",
+    "chinese": "我能刷卡吗？",
+    "literal": "用卡我付·可以吗（karta bilan 用卡 · toʻla 付 · boʻladi 可以 + -mi）",
+    "audio": { "phrase_normal": "/audio/money/money_0003_normal.mp3", "phrase_slow": "/audio/money/money_0003_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "结账前问能否刷卡。",
+    "likely_responses": [
+      { "latin": "Ha, boʻladi.", "cyrillic": "Ҳа, бўлади.", "trans": "HA, bo-la-DI", "cn": "可以。" },
+      { "latin": "Faqat naqd.", "cyrillic": "Фақат нақд.", "trans": "fa-QAT NAQD", "cn": "只收现金。" }
+    ],
+    "slots": [],
+    "local_note": "巴扎多为现金，商场和连锁店普遍能刷卡。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "money_0004",
+    "scene": "money",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Naqd pul bilan toʻlayman.",
+    "cyrillic": "Нақд пул билан тўлайман.",
+    "pronunciation": "NAQD pul bi-LAN to-lay-MAN",
+    "chinese": "我用现金付。",
+    "literal": "用现金付·我（naqd pul 现金 · toʻla 付 + -yman 我）",
+    "audio": { "phrase_normal": "/audio/money/money_0004_normal.mp3", "phrase_slow": "/audio/money/money_0004_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "告知对方用现金结账。",
+    "likely_responses": [],
+    "slots": [],
+    "local_note": "随身带些小面额现金，找零更方便。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "money_0005",
+    "scene": "money",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Mayda pul bormi?",
+    "cyrillic": "Майда пул борми?",
+    "pronunciation": "MAY-da pul bor-MI",
+    "chinese": "有零钱吗？",
+    "literal": "零·钱·有吗（mayda pul 零钱 · bor 有 + -mi）",
+    "audio": { "phrase_normal": "/audio/money/money_0005_normal.mp3", "phrase_slow": "/audio/money/money_0005_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "问对方能否找开大钞。",
+    "likely_responses": [
+      { "latin": "Yoʻq, mayda yoʻq.", "cyrillic": "Йўқ, майда йўқ.", "trans": "yo'q, MAY-da yo'q", "cn": "没有零钱。" }
+    ],
+    "slots": [],
+    "local_note": "大面额有时难找零，小额纸币要备着。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "money_0006",
+    "scene": "money",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Bir, ikki, uch, toʻrt, besh.",
+    "cyrillic": "Бир, икки, уч, тўрт, беш.",
+    "pronunciation": "BIR, ik-KI, UCH, TO'RT, BESH",
+    "chinese": "一、二、三、四、五。",
+    "literal": "1 2 3 4 5",
+    "audio": { "phrase_normal": "/audio/money/money_0006_normal.mp3", "phrase_slow": "/audio/money/money_0006_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "点数、报价、点份数都用得上。",
+    "likely_responses": [],
+    "slots": [],
+    "local_note": "点“两份”说 “ikkita”，加了量词后缀 -ta。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "money_0007",
+    "scene": "money",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Olti, yetti, sakkiz, toʻqqiz, oʻn.",
+    "cyrillic": "Олти, етти, саккиз, тўққиз, ўн.",
+    "pronunciation": "ol-TI, yet-TI, sak-KIZ, to'q-QIZ, O'N",
+    "chinese": "六、七、八、九、十。",
+    "literal": "6 7 8 9 10",
+    "audio": { "phrase_normal": "/audio/money/money_0007_normal.mp3", "phrase_slow": "/audio/money/money_0007_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "配合 1-5 一起记。",
+    "likely_responses": [],
+    "slots": [],
+    "local_note": "oʻn(10)、yigirma(20)、yuz(100)、ming(1000) 是价钱里的关键刻度。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "money_0008",
+    "scene": "money",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Yigirma ming soʻm.",
+    "cyrillic": "Йигирма минг сўм.",
+    "pronunciation": "yi-gir-MA ming SO'M",
+    "chinese": "两万苏姆。",
+    "literal": "二十·千·苏姆（yigirma 20 · ming 1000）",
+    "audio": { "phrase_normal": "/audio/money/money_0008_normal.mp3", "phrase_slow": "/audio/money/money_0008_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "报价 / 复述价格时用。",
+    "likely_responses": [],
+    "slots": [
+      { "label": "五万", "swap": "Ellik ming soʻm.", "trans": "el-LIK ming so'm" }
+    ],
+    "local_note": "一杯咖啡、一次短途打车大约就是这个量级。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "money_0009",
+    "scene": "money",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Chekni bering, iltimos.",
+    "cyrillic": "Чекни беринг, илтимос.",
+    "pronunciation": "CHEK-ni be-RING il-ti-MOS",
+    "chinese": "请给我小票。",
+    "literal": "小票·给·请（chek 小票 + -ni 宾格 · ber 给 + -ing 您）",
+    "audio": { "phrase_normal": "/audio/money/money_0009_normal.mp3", "phrase_slow": "/audio/money/money_0009_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "要收据 / 小票时用。",
+    "likely_responses": [
+      { "latin": "Mana.", "cyrillic": "Мана.", "trans": "MA-na", "cn": "给您。" }
+    ],
+    "slots": [],
+    "local_note": "-ni 是宾格后缀，标出动作的对象。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "money_0010",
+    "scene": "money",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Bu juda qimmat.",
+    "cyrillic": "Бу жуда қиммат.",
+    "pronunciation": "BU ju-DA qim-MAT",
+    "chinese": "这太贵了。",
+    "literal": "这·很·贵（bu 这 · juda 很 · qimmat 贵）",
+    "audio": { "phrase_normal": "/audio/money/money_0010_normal.mp3", "phrase_slow": "/audio/money/money_0010_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "议价起手式，说完等对方让价。",
+    "likely_responses": [
+      { "latin": "Sizga arzonroq beraman.", "cyrillic": "Сизга арзонроқ бераман.", "trans": "siz-GA ar-zon-ROQ be-ra-MAN", "cn": "给您便宜点。" }
+    ],
+    "slots": [],
+    "local_note": "语气带笑说，砍价更顺；生硬会让对方不快。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+
+  {
+    "id": "transport_0001",
+    "scene": "transport",
+    "is_essential": true,
+    "tier": 1,
+    "latin": "Hojatxona qayerda?",
+    "cyrillic": "Ҳожатхона қаерда?",
+    "pronunciation": "ho-jat-kho-NA qa-yer-DA",
+    "chinese": "洗手间在哪？",
+    "literal": "厕所·在哪（hojatxona 厕所 · qayer 哪里 + -da 在）",
+    "audio": { "phrase_normal": "/audio/transport/transport_0001_normal.mp3", "phrase_slow": "/audio/transport/transport_0001_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "找厕所救急句。也可说 “Tualet qayerda?”。",
+    "likely_responses": [
+      { "latin": "Anavi yerda.", "cyrillic": "Анави ерда.", "trans": "a-na-VI yer-DA", "cn": "在那边。" }
+    ],
+    "slots": [
+      { "label": "地铁站", "swap": "Metro qayerda?", "trans": "MET-ro qa-yer-DA" }
+    ],
+    "local_note": "-da 是位格后缀，“在…”。把地点词换掉就能问任何地方在哪。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "transport_0002",
+    "scene": "transport",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Aeroportga, iltimos.",
+    "cyrillic": "Аэропортга, илтимос.",
+    "pronunciation": "a-e-ro-port-GA il-ti-MOS",
+    "chinese": "请到机场。",
+    "literal": "往机场·请（aeroport 机场 + -ga 往）",
+    "audio": { "phrase_normal": "/audio/transport/transport_0002_normal.mp3", "phrase_slow": "/audio/transport/transport_0002_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "上车报目的地。",
+    "likely_responses": [
+      { "latin": "Xoʻp, boramiz.", "cyrillic": "Хўп, борамиз.", "trans": "XO'P, bo-ra-MIZ", "cn": "好，走。" }
+    ],
+    "slots": [
+      { "label": "去火车站", "swap": "Vokzalga, iltimos.", "trans": "vok-zal-GA il-ti-MOS" }
+    ],
+    "local_note": "-ga 是方向格后缀，“往…去”。地名后加 -ga 就是“去某地”。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "transport_0003",
+    "scene": "transport",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Shu yerda toʻxtang.",
+    "cyrillic": "Шу ерда тўхтанг.",
+    "pronunciation": "SHU yer-DA to'kh-TANG",
+    "chinese": "在这儿停。",
+    "literal": "这·地方·停（shu 这 · yer 地方 · toʻxta 停 + -ng 您）",
+    "audio": { "phrase_normal": "/audio/transport/transport_0003_normal.mp3", "phrase_slow": "/audio/transport/transport_0003_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "让司机靠边停车。",
+    "likely_responses": [
+      { "latin": "Mayli.", "cyrillic": "Майли.", "trans": "MAY-li", "cn": "行。" }
+    ],
+    "slots": [],
+    "local_note": "打车软件之外，路边招手的车也懂这句。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "transport_0004",
+    "scene": "transport",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Metro bekati qayerda?",
+    "cyrillic": "Метро бекати қаерда?",
+    "pronunciation": "MET-ro be-ka-TI qa-yer-DA",
+    "chinese": "地铁站在哪？",
+    "literal": "地铁·站·在哪（bekat 站 + -i 它的）",
+    "audio": { "phrase_normal": "/audio/transport/transport_0004_normal.mp3", "phrase_slow": "/audio/transport/transport_0004_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "找地铁入口。",
+    "likely_responses": [
+      { "latin": "Toʻgʻriga yuring.", "cyrillic": "Тўғрига юринг.", "trans": "to'g-ri-GA yu-RING", "cn": "一直往前走。" }
+    ],
+    "slots": [],
+    "local_note": "塔什干地铁票价便宜、站厅本身就是景点，值得一坐。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "transport_0005",
+    "scene": "transport",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Qancha vaqt ketadi?",
+    "cyrillic": "Қанча вақт кетади?",
+    "pronunciation": "QAN-cha VAQT ke-ta-DI",
+    "chinese": "要多久？",
+    "literal": "多少·时间·花费（vaqt 时间 · ket 走/花 + -adi 它）",
+    "audio": { "phrase_normal": "/audio/transport/transport_0005_normal.mp3", "phrase_slow": "/audio/transport/transport_0005_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "问路程 / 车程时长。",
+    "likely_responses": [
+      { "latin": "Yigirma daqiqa.", "cyrillic": "Йигирма дақиқа.", "trans": "yi-gir-MA da-qi-QA", "cn": "二十分钟。" }
+    ],
+    "slots": [],
+    "local_note": "daqiqa 是“分钟”，soat 是“小时”。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "transport_0006",
+    "scene": "transport",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Toʻgʻriga yuring.",
+    "cyrillic": "Тўғрига юринг.",
+    "pronunciation": "to'g-ri-GA yu-RING",
+    "chinese": "一直往前走。",
+    "literal": "往直·走（toʻgʻri 直 + -ga · yur 走 + -ing 您）",
+    "audio": { "phrase_normal": "/audio/transport/transport_0006_normal.mp3", "phrase_slow": "/audio/transport/transport_0006_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "问路时听到 / 自己给路时用。",
+    "likely_responses": [],
+    "slots": [],
+    "local_note": "gʻ 是小舌浊擦音，接近法语的小舌 r。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "transport_0007",
+    "scene": "transport",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Chapga buriling.",
+    "cyrillic": "Чапга бурилинг.",
+    "pronunciation": "chap-GA bu-ri-LING",
+    "chinese": "往左拐。",
+    "literal": "往左·转（chap 左 + -ga · buril 转 + -ing 您）",
+    "audio": { "phrase_normal": "/audio/transport/transport_0007_normal.mp3", "phrase_slow": "/audio/transport/transport_0007_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "给司机指方向。",
+    "likely_responses": [],
+    "slots": [
+      { "label": "往右拐", "swap": "Oʻngga buriling.", "trans": "o'ng-GA bu-ri-LING" }
+    ],
+    "local_note": "chap 左 / oʻng 右，配合手势最保险。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "transport_0008",
+    "scene": "transport",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Meni shu manzilga olib boring.",
+    "cyrillic": "Мени шу манзилга олиб боринг.",
+    "pronunciation": "me-NI shu man-zil-GA o-LIB bo-RING",
+    "chinese": "带我到这个地址。",
+    "literal": "我·这地址·带去（men 我 + -i 宾格 · manzil 地址 + -ga · olib bor 带去）",
+    "audio": { "phrase_normal": "/audio/transport/transport_0008_normal.mp3", "phrase_slow": "/audio/transport/transport_0008_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "把手机上的地址给司机看时配这句。",
+    "likely_responses": [
+      { "latin": "Manzilni koʻrsating.", "cyrillic": "Манзилни кўрсатинг.", "trans": "man-zil-NI ko'r-sa-TING", "cn": "把地址给我看看。" }
+    ],
+    "slots": [],
+    "local_note": "直接给司机看 Yandex 地图定位最省事。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "transport_0009",
+    "scene": "transport",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Taksi kerak.",
+    "cyrillic": "Такси керак.",
+    "pronunciation": "tak-SI ke-RAK",
+    "chinese": "我要出租车。",
+    "literal": "出租车·需要（kerak 需要）",
+    "audio": { "phrase_normal": "/audio/transport/transport_0009_normal.mp3", "phrase_slow": "/audio/transport/transport_0009_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "跟酒店 / 路人说要打车。",
+    "likely_responses": [
+      { "latin": "Hozir chaqiraman.", "cyrillic": "Ҳозир чақираман.", "trans": "ho-ZIR cha-qi-ra-MAN", "cn": "我这就叫。" }
+    ],
+    "slots": [],
+    "local_note": "塔什干普遍用 Yandex Go，价钱比路边拦车透明。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "transport_0010",
+    "scene": "transport",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Poyezd nechada?",
+    "cyrillic": "Поезд нечада?",
+    "pronunciation": "po-YEZD ne-cha-DA",
+    "chinese": "火车几点？",
+    "literal": "火车·几点（poyezd 火车 · necha 几 + -da 在）",
+    "audio": { "phrase_normal": "/audio/transport/transport_0010_normal.mp3", "phrase_slow": "/audio/transport/transport_0010_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "问班次时刻。",
+    "likely_responses": [
+      { "latin": "Ertalab soat sakkizda.", "cyrillic": "Эрталаб соат саккизда.", "trans": "er-ta-LAB so-AT sak-kiz-DA", "cn": "早上八点。" }
+    ],
+    "slots": [],
+    "local_note": "城际高铁 Afrosiyob 连接塔什干-撒马尔罕-布哈拉，需提前订票。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+
+  {
+    "id": "food_0001",
+    "scene": "food",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Menyu bormi?",
+    "cyrillic": "Меню борми?",
+    "pronunciation": "MEN-yu bor-MI",
+    "chinese": "有菜单吗？",
+    "literal": "菜单·有吗（menyu 菜单 · bor 有 + -mi）",
+    "audio": { "phrase_normal": "/audio/food/food_0001_normal.mp3", "phrase_slow": "/audio/food/food_0001_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "落座后要菜单。",
+    "likely_responses": [
+      { "latin": "Mana, menyu.", "cyrillic": "Мана, меню.", "trans": "MA-na, MEN-yu", "cn": "给您菜单。" }
+    ],
+    "slots": [],
+    "local_note": "很多小馆没有纸质菜单，直接问 “Nima bor?”（有什么）也行。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "food_0002",
+    "scene": "food",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Bitta osh, iltimos.",
+    "cyrillic": "Битта ош, илтимос.",
+    "pronunciation": "bit-TA OSH il-ti-MOS",
+    "chinese": "来一份抓饭。",
+    "literal": "一份·抓饭·请（bitta 一个 · osh 抓饭/plov）",
+    "audio": { "phrase_normal": "/audio/food/food_0002_normal.mp3", "phrase_slow": "/audio/food/food_0002_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "点单主力句，换菜名即可。",
+    "likely_responses": [
+      { "latin": "Hozir olib kelaman.", "cyrillic": "Ҳозир олиб келаман.", "trans": "ho-ZIR o-LIB ke-la-MAN", "cn": "马上给您端来。" }
+    ],
+    "slots": [
+      { "label": "两份烤串", "swap": "Ikkita shashlik, iltimos.", "trans": "ik-ki-TA shash-LIK il-ti-MOS" }
+    ],
+    "local_note": "osh(=plov 抓饭) 是乌兹别克国菜，午餐吃最正宗。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "food_0003",
+    "scene": "food",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Bu achchiqmi?",
+    "cyrillic": "Бу аччиқми?",
+    "pronunciation": "BU ach-chiq-MI",
+    "chinese": "这个辣吗？",
+    "literal": "这·辣吗（achchiq 辣 + -mi）",
+    "audio": { "phrase_normal": "/audio/food/food_0003_normal.mp3", "phrase_slow": "/audio/food/food_0003_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "点菜前确认辣度。",
+    "likely_responses": [
+      { "latin": "Yoʻq, achchiq emas.", "cyrillic": "Йўқ, аччиқ эмас.", "trans": "yo'q, ach-CHIQ e-MAS", "cn": "不辣。" }
+    ],
+    "slots": [],
+    "local_note": "乌兹别克菜整体不算辣，但可单独要辣酱。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "food_0004",
+    "scene": "food",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Men goʻsht yemayman.",
+    "cyrillic": "Мен гўшт емайман.",
+    "pronunciation": "MEN GO'SHT ye-may-MAN",
+    "chinese": "我不吃肉。",
+    "literal": "我·肉·不吃（goʻsht 肉 · ye 吃 + -may 否定 + -man 我）",
+    "audio": { "phrase_normal": "/audio/food/food_0004_normal.mp3", "phrase_slow": "/audio/food/food_0004_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "表明忌口 / 素食。",
+    "likely_responses": [
+      { "latin": "Sabzavotli taom bor.", "cyrillic": "Сабзавотли таом бор.", "trans": "sab-za-vot-LI ta-OM bor", "cn": "有素菜。" }
+    ],
+    "slots": [
+      { "label": "不吃猪肉", "swap": "Men choʻchqa goʻshti yemayman.", "trans": "MEN choch-QA gosh-TI ye-may-MAN" }
+    ],
+    "local_note": "乌兹别克斯坦是穆斯林国家，餐馆基本没有猪肉，多为羊牛肉。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "food_0005",
+    "scene": "food",
+    "is_essential": true,
+    "tier": 1,
+    "latin": "Suv, iltimos.",
+    "cyrillic": "Сув, илтимос.",
+    "pronunciation": "SUV il-ti-MOS",
+    "chinese": "请来杯水。",
+    "literal": "水·请（suv 水）",
+    "audio": { "phrase_normal": "/audio/food/food_0005_normal.mp3", "phrase_slow": "/audio/food/food_0005_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "要水最短句。换成任何名词都能点。",
+    "likely_responses": [
+      { "latin": "Gazlimi yoki gazsiz?", "cyrillic": "Газлими ёки газсиз?", "trans": "gaz-li-MI yo-KI gaz-SIZ", "cn": "有气还是无气？" }
+    ],
+    "slots": [
+      { "label": "来杯茶", "swap": "Choy, iltimos.", "trans": "CHOY il-ti-MOS" }
+    ],
+    "local_note": "-siz 后缀是“没有…”，gazsiz = 无气（水）。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "food_0006",
+    "scene": "food",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Yana bitta choy, iltimos.",
+    "cyrillic": "Яна битта чой, илтимос.",
+    "pronunciation": "ya-NA bit-TA CHOY il-ti-MOS",
+    "chinese": "再来一杯茶。",
+    "literal": "再·一份·茶·请（yana 再 · choy 茶）",
+    "audio": { "phrase_normal": "/audio/food/food_0006_normal.mp3", "phrase_slow": "/audio/food/food_0006_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "续茶 / 加点。",
+    "likely_responses": [
+      { "latin": "Xoʻp boʻladi.", "cyrillic": "Хўп бўлади.", "trans": "XO'P bo-la-DI", "cn": "好的。" }
+    ],
+    "slots": [],
+    "local_note": "绿茶 (koʻk choy) 是餐桌标配，主人会不停给你续。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "food_0007",
+    "scene": "food",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Juda mazali!",
+    "cyrillic": "Жуда мазали!",
+    "pronunciation": "ju-DA ma-za-LI",
+    "chinese": "真好吃！",
+    "literal": "很·美味（juda 很 · mazali 美味）",
+    "audio": { "phrase_normal": "/audio/food/food_0007_normal.mp3", "phrase_slow": "/audio/food/food_0007_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "夸菜，屡试不爽的加分句。",
+    "likely_responses": [
+      { "latin": "Yoqqanidan xursandman.", "cyrillic": "Ёққанидан хурсандман.", "trans": "yoq-qa-ni-DAN khur-sand-MAN", "cn": "您喜欢我很高兴。" }
+    ],
+    "slots": [],
+    "local_note": "对家庭餐厅厨娘说这句，常换来一杯免费茶或一道送的小菜。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "food_0008",
+    "scene": "food",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Hisob, iltimos.",
+    "cyrillic": "Ҳисоб, илтимос.",
+    "pronunciation": "hi-SOB il-ti-MOS",
+    "chinese": "买单。",
+    "literal": "账单·请（hisob 账 / 计算）",
+    "audio": { "phrase_normal": "/audio/food/food_0008_normal.mp3", "phrase_slow": "/audio/food/food_0008_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "结账最短句。",
+    "likely_responses": [
+      { "latin": "Hozir olib kelaman.", "cyrillic": "Ҳозир олиб келаман.", "trans": "ho-ZIR o-LIB ke-la-MAN", "cn": "马上拿来。" }
+    ],
+    "slots": [],
+    "local_note": "也常说俄语的 “Schyot”（账单），两者都通。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "food_0009",
+    "scene": "food",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Toʻydim, rahmat.",
+    "cyrillic": "Тўйдим, раҳмат.",
+    "pronunciation": "TOY-dim rah-MAT",
+    "chinese": "我吃饱了，谢谢。",
+    "literal": "我饱了·谢谢（toʻy 饱 + -dim 我·过去）",
+    "audio": { "phrase_normal": "/audio/food/food_0009_normal.mp3", "phrase_slow": "/audio/food/food_0009_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "主人不停添菜时的终结技。",
+    "likely_responses": [
+      { "latin": "Yana oling!", "cyrillic": "Яна олинг!", "trans": "ya-NA o-LING", "cn": "再吃点！" }
+    ],
+    "slots": [],
+    "local_note": "乌兹别克主人热情，会一直劝饭；这句本地话比客套更能让对方收手。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "food_0010",
+    "scene": "food",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Bu nima?",
+    "cyrillic": "Бу нима?",
+    "pronunciation": "BU ni-MA",
+    "chinese": "这是什么？",
+    "literal": "这·什么（bu 这 · nima 什么）",
+    "audio": { "phrase_normal": "/audio/food/food_0010_normal.mp3", "phrase_slow": "/audio/food/food_0010_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "指着不认识的菜问。",
+    "likely_responses": [
+      { "latin": "Bu somsa.", "cyrillic": "Бу сомса.", "trans": "BU som-SA", "cn": "这是烤包子。" }
+    ],
+    "slots": [],
+    "local_note": "somsa（烤包子）、non（馕）、manti（蒸饺）都是必尝主食。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "food_0011",
+    "scene": "food",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Olib ketaman.",
+    "cyrillic": "Олиб кетаман.",
+    "pronunciation": "o-LIB ke-ta-MAN",
+    "chinese": "我要打包带走。",
+    "literal": "拿·走·我（olib ket 拿走 + -aman 我）",
+    "audio": { "phrase_normal": "/audio/food/food_0011_normal.mp3", "phrase_slow": "/audio/food/food_0011_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "外带 / 打包时用。",
+    "likely_responses": [
+      { "latin": "Hozir taxlab beraman.", "cyrillic": "Ҳозир тахлаб бераман.", "trans": "ho-ZIR takh-LAB be-ra-MAN", "cn": "这就给您装好。" }
+    ],
+    "slots": [],
+    "local_note": "堂食说 “Shu yerda”（这儿吃）。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+
+  {
+    "id": "lodging_0001",
+    "scene": "lodging",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Menda bron bor.",
+    "cyrillic": "Менда брон бор.",
+    "pronunciation": "men-DA BRON bor",
+    "chinese": "我有预订。",
+    "literal": "我这·预订·有（men 我 + -da 在 · bron 预订）",
+    "audio": { "phrase_normal": "/audio/lodging/lodging_0001_normal.mp3", "phrase_slow": "/audio/lodging/lodging_0001_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "前台报到第一句。",
+    "likely_responses": [
+      { "latin": "Ismingiz nima?", "cyrillic": "Исмингиз нима?", "trans": "is-min-GIZ ni-MA", "cn": "您叫什么名字？" }
+    ],
+    "slots": [],
+    "local_note": "报名字时把护照拼写给对方看最稳。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "lodging_0002",
+    "scene": "lodging",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Wi-Fi paroli nima?",
+    "cyrillic": "Wi-Fi пароли нима?",
+    "pronunciation": "WAY-fay pa-ro-LI ni-MA",
+    "chinese": "Wi-Fi 密码是什么？",
+    "literal": "Wi-Fi·密码·什么（parol 密码 + -i 它的）",
+    "audio": { "phrase_normal": "/audio/lodging/lodging_0002_normal.mp3", "phrase_slow": "/audio/lodging/lodging_0002_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "入住必问。",
+    "likely_responses": [
+      { "latin": "Mana, bu yerda.", "cyrillic": "Мана, бу ерда.", "trans": "MA-na, bu yer-DA", "cn": "喏，在这儿（写着）。" }
+    ],
+    "slots": [],
+    "local_note": "民宿网速一般，重要下载提前在城里做好。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "lodging_0003",
+    "scene": "lodging",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Issiq suv yoʻq.",
+    "cyrillic": "Иссиқ сув йўқ.",
+    "pronunciation": "is-SIQ SUV yo'q",
+    "chinese": "没有热水。",
+    "literal": "热·水·没有（issiq 热 · suv 水 · yoʻq 无）",
+    "audio": { "phrase_normal": "/audio/lodging/lodging_0003_normal.mp3", "phrase_slow": "/audio/lodging/lodging_0003_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "报修 / 反映问题。",
+    "likely_responses": [
+      { "latin": "Hozir tekshiraman.", "cyrillic": "Ҳозир текшираман.", "trans": "ho-ZIR tek-shi-ra-MAN", "cn": "我这就检查。" }
+    ],
+    "slots": [],
+    "local_note": "老城区民宿偶有热水时段限制，入住时可先问。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "lodging_0004",
+    "scene": "lodging",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Konditsioner ishlamayapti.",
+    "cyrillic": "Кондиционер ишламаяпти.",
+    "pronunciation": "kon-di-tsi-o-NER ish-la-ma-YAP-ti",
+    "chinese": "空调不工作。",
+    "literal": "空调·不运转（ishla 工作 + -mayapti 正不…着）",
+    "audio": { "phrase_normal": "/audio/lodging/lodging_0004_normal.mp3", "phrase_slow": "/audio/lodging/lodging_0004_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "夏天塔什干很热，空调坏了要及时说。",
+    "likely_responses": [
+      { "latin": "Ustani chaqiraman.", "cyrillic": "Устани чақираман.", "trans": "us-ta-NI cha-qi-ra-MAN", "cn": "我叫师傅来。" }
+    ],
+    "slots": [],
+    "local_note": "八月塔什干日间常超 35°C，空调是刚需。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "lodging_0005",
+    "scene": "lodging",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Bir kecha qancha?",
+    "cyrillic": "Бир кеча қанча?",
+    "pronunciation": "BIR ke-CHA QAN-cha",
+    "chinese": "一晚多少钱？",
+    "literal": "一·夜·多少（kecha 夜）",
+    "audio": { "phrase_normal": "/audio/lodging/lodging_0005_normal.mp3", "phrase_slow": "/audio/lodging/lodging_0005_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "现场问房价。",
+    "likely_responses": [
+      { "latin": "Ikki yuz ming soʻm.", "cyrillic": "Икки юз минг сўм.", "trans": "ik-KI YUZ ming so'm", "cn": "二十万苏姆。" }
+    ],
+    "slots": [],
+    "local_note": "yuz = 百，ikki yuz ming = 20 万。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "lodging_0006",
+    "scene": "lodging",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Yana bitta sochiq, iltimos.",
+    "cyrillic": "Яна битта сочиқ, илтимос.",
+    "pronunciation": "ya-NA bit-TA so-CHIQ il-ti-MOS",
+    "chinese": "请再给一条毛巾。",
+    "literal": "再·一条·毛巾·请（sochiq 毛巾）",
+    "audio": { "phrase_normal": "/audio/lodging/lodging_0006_normal.mp3", "phrase_slow": "/audio/lodging/lodging_0006_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "要备品。换名词即可要枕头、被子等。",
+    "likely_responses": [
+      { "latin": "Hozir olib kelaman.", "cyrillic": "Ҳозир олиб келаман.", "trans": "ho-ZIR o-LIB ke-la-MAN", "cn": "马上拿来。" }
+    ],
+    "slots": [],
+    "local_note": "yostiq 枕头 / choyshab 床单，都能套进这句。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "lodging_0007",
+    "scene": "lodging",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Nechada chiqishim kerak?",
+    "cyrillic": "Нечада чиқишим керак?",
+    "pronunciation": "ne-cha-DA chi-qi-SHIM ke-RAK",
+    "chinese": "我几点要退房？",
+    "literal": "几点·我离开·需要（necha 几 · chiq 出/离 + -ishim 我的动作 · kerak 需要）",
+    "audio": { "phrase_normal": "/audio/lodging/lodging_0007_normal.mp3", "phrase_slow": "/audio/lodging/lodging_0007_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "确认退房时间。",
+    "likely_responses": [
+      { "latin": "Tushgacha.", "cyrillic": "Тушгача.", "trans": "tush-GA-cha", "cn": "中午之前。" }
+    ],
+    "slots": [],
+    "local_note": "-gacha 是“到…为止”，tushgacha = 到中午。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "lodging_0008",
+    "scene": "lodging",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Rahmat, hammasi zoʻr.",
+    "cyrillic": "Раҳмат, ҳаммаси зўр.",
+    "pronunciation": "rah-MAT, ham-ma-SI ZO'R",
+    "chinese": "谢谢，一切都很好。",
+    "literal": "谢谢·全部·棒（hammasi 全部 · zoʻr 棒极了）",
+    "audio": { "phrase_normal": "/audio/lodging/lodging_0008_normal.mp3", "phrase_slow": "/audio/lodging/lodging_0008_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "退房 / 告别时夸一句，主人受用。",
+    "likely_responses": [
+      { "latin": "Yana keling!", "cyrillic": "Яна келинг!", "trans": "ya-NA ke-LING", "cn": "欢迎再来！" }
+    ],
+    "slots": [],
+    "local_note": "zoʻr 是口语高频赞词，等于“太棒了”。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+
+  {
+    "id": "shopping_0001",
+    "scene": "shopping",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Arzonroq boʻladimi?",
+    "cyrillic": "Арзонроқ бўладими?",
+    "pronunciation": "ar-zon-ROQ bo-la-di-MI",
+    "chinese": "能便宜点吗？",
+    "literal": "更便宜·可以吗（arzon 便宜 + -roq 更 · boʻladi 可以 + -mi）",
+    "audio": { "phrase_normal": "/audio/shopping/shopping_0001_normal.mp3", "phrase_slow": "/audio/shopping/shopping_0001_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "议价核心句。",
+    "likely_responses": [
+      { "latin": "Mayli, sizga chegirma.", "cyrillic": "Майли, сизга чегирма.", "trans": "MAY-li, siz-GA che-gir-MA", "cn": "行，给您打个折。" }
+    ],
+    "slots": [],
+    "local_note": "议价时换成乌兹别克语是大杀器，气氛一松往往能再让 10–15%。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "shopping_0002",
+    "scene": "shopping",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Olaman.",
+    "cyrillic": "Оламан.",
+    "pronunciation": "o-la-MAN",
+    "chinese": "我要了。",
+    "literal": "我拿（ol 拿/买 + -aman 我）",
+    "audio": { "phrase_normal": "/audio/shopping/shopping_0002_normal.mp3", "phrase_slow": "/audio/shopping/shopping_0002_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "议价收尾、决定购买时。",
+    "likely_responses": [
+      { "latin": "Rahmat, olib keting.", "cyrillic": "Раҳмат, олиб кетинг.", "trans": "rah-MAT, o-LIB ke-TING", "cn": "谢谢，拿走吧。" }
+    ],
+    "slots": [],
+    "local_note": "说完这句就等于成交，一手交钱一手交货。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "shopping_0003",
+    "scene": "shopping",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Faqat koʻryapman.",
+    "cyrillic": "Фақат кўряпман.",
+    "pronunciation": "fa-QAT ko-RYAP-man",
+    "chinese": "我只是看看。",
+    "literal": "只·我在看（faqat 只 · koʻr 看 + -yapman 我正…着）",
+    "audio": { "phrase_normal": "/audio/shopping/shopping_0003_normal.mp3", "phrase_slow": "/audio/shopping/shopping_0003_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "婉拒热情的招揽。",
+    "likely_responses": [
+      { "latin": "Bemalol, koʻring.", "cyrillic": "Бемалол, кўринг.", "trans": "be-ma-LOL, ko-RING", "cn": "随便看。" }
+    ],
+    "slots": [],
+    "local_note": "巴扎摊主招呼很热情，这句能礼貌地保留余地。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "shopping_0004",
+    "scene": "shopping",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Boshqa rangi bormi?",
+    "cyrillic": "Бошқа ранги борми?",
+    "pronunciation": "bosh-QA ran-GI bor-MI",
+    "chinese": "有别的颜色吗？",
+    "literal": "别的·颜色·有吗（boshqa 别的 · rang 颜色 + -i 它的）",
+    "audio": { "phrase_normal": "/audio/shopping/shopping_0004_normal.mp3", "phrase_slow": "/audio/shopping/shopping_0004_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "挑款式 / 颜色。",
+    "likely_responses": [
+      { "latin": "Ha, mana bunisi.", "cyrillic": "Ҳа, мана буниси.", "trans": "HA, MA-na bu-ni-SI", "cn": "有，喏这个。" }
+    ],
+    "slots": [
+      { "label": "有大一点的吗", "swap": "Kattarogʻi bormi?", "trans": "kat-ta-ro-GI bor-MI" }
+    ],
+    "local_note": "苏扎尼刺绣、丝绸围巾颜色多，值得多比几款。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "shopping_0005",
+    "scene": "shopping",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Bunisi qancha?",
+    "cyrillic": "Буниси қанча?",
+    "pronunciation": "bu-ni-SI QAN-cha",
+    "chinese": "这个多少钱？",
+    "literal": "这个·多少（bunisi 这一个）",
+    "audio": { "phrase_normal": "/audio/shopping/shopping_0005_normal.mp3", "phrase_slow": "/audio/shopping/shopping_0005_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "指着某件具体问价。",
+    "likely_responses": [
+      { "latin": "Yuz ming soʻm.", "cyrillic": "Юз минг сўм.", "trans": "YUZ ming so'm", "cn": "十万苏姆。" }
+    ],
+    "slots": [],
+    "local_note": "问完初价别急着买，先说 Qimmat 试探议价空间。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "shopping_0006",
+    "scene": "shopping",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Oʻylab koʻraman.",
+    "cyrillic": "Ўйлаб кўраман.",
+    "pronunciation": "oy-LAB ko-ra-MAN",
+    "chinese": "我再想想。",
+    "literal": "想·看·我（oʻyla 想 + -b · koʻr 看 → 试着想想）",
+    "audio": { "phrase_normal": "/audio/shopping/shopping_0006_normal.mp3", "phrase_slow": "/audio/shopping/shopping_0006_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "不想马上买、留退路的软钉子。",
+    "likely_responses": [
+      { "latin": "Mayli, kuting.", "cyrillic": "Майли, кутинг.", "trans": "MAY-li, ku-TING", "cn": "行，等您。" }
+    ],
+    "slots": [],
+    "local_note": "转身要走时，摊主常会主动再降价。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "shopping_0007",
+    "scene": "shopping",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Juda chiroyli!",
+    "cyrillic": "Жуда чиройли!",
+    "pronunciation": "ju-DA chi-roy-LI",
+    "chinese": "真漂亮！",
+    "literal": "很·漂亮（chiroyli 漂亮）",
+    "audio": { "phrase_normal": "/audio/shopping/shopping_0007_normal.mp3", "phrase_slow": "/audio/shopping/shopping_0007_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "夸货 / 夸手艺，拉近关系。",
+    "likely_responses": [
+      { "latin": "Qoʻlda qilingan.", "cyrillic": "Қўлда қилинган.", "trans": "qol-DA qi-lin-GAN", "cn": "手工做的。" }
+    ],
+    "slots": [],
+    "local_note": "对手工艺人夸一句，砍价气氛立刻友好起来。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "shopping_0008",
+    "scene": "shopping",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Xalta bormi?",
+    "cyrillic": "Халта борми?",
+    "pronunciation": "khal-TA bor-MI",
+    "chinese": "有袋子吗？",
+    "literal": "袋子·有吗（xalta 袋子）",
+    "audio": { "phrase_normal": "/audio/shopping/shopping_0008_normal.mp3", "phrase_slow": "/audio/shopping/shopping_0008_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "买完要个袋子装。",
+    "likely_responses": [
+      { "latin": "Mana, oling.", "cyrillic": "Мана, олинг.", "trans": "MA-na, o-LING", "cn": "给您，拿着。" }
+    ],
+    "slots": [],
+    "local_note": "巴扎多用薄塑料袋，易碎品最好自带缓冲。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+
+  {
+    "id": "emergency_0001",
+    "scene": "emergency",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Yordam bering!",
+    "cyrillic": "Ёрдам беринг!",
+    "pronunciation": "yor-DAM be-RING",
+    "chinese": "帮帮我！",
+    "literal": "帮助·给（yordam 帮助 · ber 给 + -ing 您）",
+    "audio": { "phrase_normal": "/audio/emergency/emergency_0001_normal.mp3", "phrase_slow": "/audio/emergency/emergency_0001_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "紧急求助最直接的一句。",
+    "likely_responses": [
+      { "latin": "Nima boʻldi?", "cyrillic": "Нима бўлди?", "trans": "ni-MA bol-DI", "cn": "怎么了？" }
+    ],
+    "slots": [],
+    "local_note": "喊出来 + 手势，路人一般会立刻围过来帮忙。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "emergency_0002",
+    "scene": "emergency",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Politsiyani chaqiring!",
+    "cyrillic": "Полицияни чақиринг!",
+    "pronunciation": "po-LIT-si-ya-ni cha-qi-RING",
+    "chinese": "叫警察！",
+    "literal": "警察·叫（politsiya 警察 + -ni 宾格 · chaqir 叫 + -ing 您）",
+    "audio": { "phrase_normal": "/audio/emergency/emergency_0002_normal.mp3", "phrase_slow": "/audio/emergency/emergency_0002_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "需要报警时。",
+    "likely_responses": [
+      { "latin": "Hozir chaqiraman.", "cyrillic": "Ҳозир чақираман.", "trans": "ho-ZIR cha-qi-ra-MAN", "cn": "我这就叫。" }
+    ],
+    "slots": [],
+    "local_note": "乌兹别克斯坦报警电话是 102；救护 103，火警 101。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "emergency_0003",
+    "scene": "emergency",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Shifokor kerak.",
+    "cyrillic": "Шифокор керак.",
+    "pronunciation": "shi-fo-KOR ke-RAK",
+    "chinese": "我需要医生。",
+    "literal": "医生·需要（shifokor 医生 · kerak 需要）",
+    "audio": { "phrase_normal": "/audio/emergency/emergency_0003_normal.mp3", "phrase_slow": "/audio/emergency/emergency_0003_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "身体不适求医。",
+    "likely_responses": [
+      { "latin": "Tez yordam chaqiraman.", "cyrillic": "Тез ёрдам чақираман.", "trans": "TEZ yor-DAM cha-qi-ra-MAN", "cn": "我叫救护车。" }
+    ],
+    "slots": [],
+    "local_note": "tez yordam = 急救 / 救护车（字面“快帮助”）。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "emergency_0004",
+    "scene": "emergency",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Kasalxona qayerda?",
+    "cyrillic": "Касалхона қаерда?",
+    "pronunciation": "ka-sal-kho-NA qa-yer-DA",
+    "chinese": "医院在哪？",
+    "literal": "医院·在哪（kasalxona 医院＝病·屋）",
+    "audio": { "phrase_normal": "/audio/emergency/emergency_0004_normal.mp3", "phrase_slow": "/audio/emergency/emergency_0004_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "找医院。",
+    "likely_responses": [
+      { "latin": "Yaqin joyda bor.", "cyrillic": "Яқин жойда бор.", "trans": "ya-QIN joy-DA bor", "cn": "附近就有。" }
+    ],
+    "slots": [
+      { "label": "药店在哪", "swap": "Dorixona qayerda?", "trans": "do-ri-kho-NA qa-yer-DA" }
+    ],
+    "local_note": "-xona 是“…屋/馆”，dorixona 药店＝药·屋。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "emergency_0005",
+    "scene": "emergency",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Menda allergiya bor.",
+    "cyrillic": "Менда аллергия бор.",
+    "pronunciation": "men-DA al-ler-GI-ya bor",
+    "chinese": "我有过敏。",
+    "literal": "我这·过敏·有（men 我 + -da 在 · allergiya 过敏）",
+    "audio": { "phrase_normal": "/audio/emergency/emergency_0005_normal.mp3", "phrase_slow": "/audio/emergency/emergency_0005_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "点餐 / 就医时说明过敏。",
+    "likely_responses": [
+      { "latin": "Nimaga allergiyangiz bor?", "cyrillic": "Нимага аллергиянгиз бор?", "trans": "ni-ma-GA al-ler-gi-yan-GIZ bor", "cn": "您对什么过敏？" }
+    ],
+    "slots": [],
+    "local_note": "把过敏原写成纸条随身带，语言不通时直接出示。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "emergency_0006",
+    "scene": "emergency",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Pasportimni yoʻqotdim.",
+    "cyrillic": "Паспортимни йўқотдим.",
+    "pronunciation": "pas-por-tim-NI yo-qot-DIM",
+    "chinese": "我把护照弄丢了。",
+    "literal": "我的护照·弄丢了（pasport + -im 我的 + -ni 宾格 · yoʻqot 弄丢 + -dim 我·过去）",
+    "audio": { "phrase_normal": "/audio/emergency/emergency_0006_normal.mp3", "phrase_slow": "/audio/emergency/emergency_0006_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "丢证件时向警察 / 酒店求助。",
+    "likely_responses": [
+      { "latin": "Qayerda yoʻqotdingiz?", "cyrillic": "Қаерда йўқотдингиз?", "trans": "qa-yer-DA yo-qot-din-GIZ", "cn": "在哪儿丢的？" }
+    ],
+    "slots": [],
+    "local_note": "护照丢失联系中国驻塔什干大使馆，并先到警局开报案证明。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "emergency_0007",
+    "scene": "emergency",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Adashib qoldim.",
+    "cyrillic": "Адашиб қолдим.",
+    "pronunciation": "a-da-SHIB qol-DIM",
+    "chinese": "我迷路了。",
+    "literal": "迷·留下了（adash 迷路 + -ib · qol 留 + -dim 我·过去）",
+    "audio": { "phrase_normal": "/audio/emergency/emergency_0007_normal.mp3", "phrase_slow": "/audio/emergency/emergency_0007_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "找不到路时求助。",
+    "likely_responses": [
+      { "latin": "Qayerga borasiz?", "cyrillic": "Қаерга борасиз?", "trans": "qa-yer-GA bo-ra-SIZ", "cn": "您要去哪儿？" }
+    ],
+    "slots": [],
+    "local_note": "把目的地在地图上指给对方，比说地址更快。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+
+  {
+    "id": "chat_0001",
+    "scene": "chat",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Mening ismim Li.",
+    "cyrillic": "Менинг исмим Ли.",
+    "pronunciation": "me-NING is-MIM LI",
+    "chinese": "我叫（李）。",
+    "literal": "我的·名字·（李）（mening 我的 · ism 名字 + -im 我的）",
+    "audio": { "phrase_normal": "/audio/chat/chat_0001_normal.mp3", "phrase_slow": "/audio/chat/chat_0001_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "自我介绍，把 Li 换成自己名字。",
+    "likely_responses": [
+      { "latin": "Tanishganimdan xursandman.", "cyrillic": "Танишганимдан хурсандман.", "trans": "ta-nish-ga-nim-DAN khur-sand-MAN", "cn": "很高兴认识你。" }
+    ],
+    "slots": [],
+    "local_note": "-im 是“我的”后缀，ismim = 我的名字。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "chat_0002",
+    "scene": "chat",
+    "is_essential": false,
+    "tier": 1,
+    "latin": "Men Xitoydanman.",
+    "cyrillic": "Мен Хитойданман.",
+    "pronunciation": "MEN khi-toy-dan-MAN",
+    "chinese": "我来自中国。",
+    "literal": "我·从中国·是（Xitoy 中国 + -dan 从 + -man 我）",
+    "audio": { "phrase_normal": "/audio/chat/chat_0002_normal.mp3", "phrase_slow": "/audio/chat/chat_0002_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "答“你从哪来”。",
+    "likely_responses": [
+      { "latin": "Xush kelibsiz!", "cyrillic": "Хуш келибсиз!", "trans": "KHUSH ke-lib-SIZ", "cn": "欢迎！" }
+    ],
+    "slots": [],
+    "local_note": "-dan 是“从…”后缀。中乌关系友好，说来自中国常收获热情回应。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "chat_0003",
+    "scene": "chat",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Ismingiz nima?",
+    "cyrillic": "Исмингиз нима?",
+    "pronunciation": "is-min-GIZ ni-MA",
+    "chinese": "您叫什么名字？",
+    "literal": "您的·名字·什么（ism + -ingiz 您的）",
+    "audio": { "phrase_normal": "/audio/chat/chat_0003_normal.mp3", "phrase_slow": "/audio/chat/chat_0003_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "回问对方名字。",
+    "likely_responses": [
+      { "latin": "Mening ismim Aziz.", "cyrillic": "Менинг исмим Азиз.", "trans": "me-NING is-MIM a-ZIZ", "cn": "我叫阿齐兹。" }
+    ],
+    "slots": [],
+    "local_note": "-ingiz 是敬称“您的”，比 -ing 更客气。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "chat_0004",
+    "scene": "chat",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Qandaysiz?",
+    "cyrillic": "Қандайсиз?",
+    "pronunciation": "qan-day-SIZ",
+    "chinese": "您最近怎么样？",
+    "literal": "您·如何（qanday 怎样 + -siz 您）",
+    "audio": { "phrase_normal": "/audio/chat/chat_0004_normal.mp3", "phrase_slow": "/audio/chat/chat_0004_slow.mp3" },
+    "politeness": "siz",
+    "register_note": "寒暄近况。",
+    "likely_responses": [
+      { "latin": "Yaxshi, rahmat.", "cyrillic": "Яхши, раҳмат.", "trans": "yakh-SHI, rah-MAT", "cn": "好，谢谢。" }
+    ],
+    "slots": [],
+    "local_note": "本地人寒暄可以连问好几句健康、家人，礼节性居多。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "chat_0005",
+    "scene": "chat",
+    "is_essential": false,
+    "tier": 2,
+    "latin": "Bu joy juda chiroyli.",
+    "cyrillic": "Бу жой жуда чиройли.",
+    "pronunciation": "BU JOY ju-DA chi-roy-LI",
+    "chinese": "这地方真美。",
+    "literal": "这·地方·很·美（joy 地方 · chiroyli 美）",
+    "audio": { "phrase_normal": "/audio/chat/chat_0005_normal.mp3", "phrase_slow": "/audio/chat/chat_0005_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "参观时随口一夸，本地人爱听。",
+    "likely_responses": [
+      { "latin": "Rahmat, xush kelibsiz.", "cyrillic": "Раҳмат, хуш келибсиз.", "trans": "rah-MAT, KHUSH ke-lib-SIZ", "cn": "谢谢，欢迎。" }
+    ],
+    "slots": [],
+    "local_note": "撒马尔罕、布哈拉的古建筑值得多花时间。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "chat_0006",
+    "scene": "chat",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Oʻzbekiston ajoyib!",
+    "cyrillic": "Ўзбекистон ажойиб!",
+    "pronunciation": "oz-be-kis-TON a-jo-YIB",
+    "chinese": "乌兹别克斯坦太棒了！",
+    "literal": "乌兹别克斯坦·了不起（ajoyib 了不起）",
+    "audio": { "phrase_normal": "/audio/chat/chat_0006_normal.mp3", "phrase_slow": "/audio/chat/chat_0006_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "由衷夸国家，几乎万能的破冰句。",
+    "likely_responses": [
+      { "latin": "Rahmat! Yana keling.", "cyrillic": "Раҳмат! Яна келинг.", "trans": "rah-MAT! ya-NA ke-LING", "cn": "谢谢！欢迎再来。" }
+    ],
+    "slots": [],
+    "local_note": "本地人对国家很自豪，这句常换来更多热情款待。",
+    "verification_status": "ai_generated_unreviewed"
+  },
+  {
+    "id": "chat_0007",
+    "scene": "chat",
+    "is_essential": false,
+    "tier": 3,
+    "latin": "Xayr, koʻrishguncha!",
+    "cyrillic": "Хайр, кўришгунча!",
+    "pronunciation": "KHAYR, ko-rish-GUN-cha",
+    "chinese": "再见，回头见！",
+    "literal": "再见·到再见面为止（koʻrish 见面 + -guncha 直到）",
+    "audio": { "phrase_normal": "/audio/chat/chat_0007_normal.mp3", "phrase_slow": "/audio/chat/chat_0007_slow.mp3" },
+    "politeness": "neutral",
+    "register_note": "热络地道别。",
+    "likely_responses": [
+      { "latin": "Xayr, sogʻ boʻling!", "cyrillic": "Хайр, соғ бўлинг!", "trans": "KHAYR, SOG bo-LING", "cn": "再见，保重！" }
+    ],
+    "slots": [],
+    "local_note": "-guncha 是“直到…”，koʻrishguncha 字面“到再见面为止”。",
+    "verification_status": "ai_generated_unreviewed"
+  }
+]

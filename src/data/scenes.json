@@ -1,0 +1,90 @@
+[
+  {
+    "id": "essentials",
+    "name_zh": "必备应答 & 礼貌",
+    "name_en": "Essentials & Courtesy",
+    "name_uz": "Asosiy iboralar",
+    "color_token": "essentials",
+    "order": 1,
+    "target": 14,
+    "icon": "🟡",
+    "blurb": "零基础到能寒暄的桥。打招呼、道谢、说听不懂、请对方慢点重说。乌兹别克语一句 Rahmat 就能让本地人眼睛一亮。"
+  },
+  {
+    "id": "money",
+    "name_zh": "数字 & 钱",
+    "name_en": "Numbers & Money",
+    "name_uz": "Pul va raqamlar",
+    "color_token": "money",
+    "order": 2,
+    "target": 10,
+    "icon": "🟢",
+    "blurb": "出租车、餐厅、巴扎、酒店都要用的数字与问价。本地货币是苏姆 (soʻm)，动辄上万，听懂数字最关键。"
+  },
+  {
+    "id": "transport",
+    "name_zh": "交通",
+    "name_en": "Transport",
+    "name_uz": "Transport",
+    "color_token": "transport",
+    "order": 3,
+    "target": 10,
+    "icon": "🔵",
+    "blurb": "从机场到酒店、从城市到城市的第一道关。塔什干打车用 Yandex Go，地铁 (metro) 便宜又好用。"
+  },
+  {
+    "id": "food",
+    "name_zh": "餐饮",
+    "name_en": "Food & Restaurant",
+    "name_uz": "Taom va restoran",
+    "color_token": "food",
+    "order": 4,
+    "target": 11,
+    "icon": "🔴",
+    "blurb": "抓饭 (osh/plov)、烤包子 (somsa)、烤串 (shashlik)、馕 (non)、茶 (choy)——能点能拒能问辣不辣，夸一句 Juda mazali 常有惊喜。"
+  },
+  {
+    "id": "lodging",
+    "name_zh": "住宿",
+    "name_en": "Lodging",
+    "name_uz": "Mehmonxona",
+    "color_token": "lodging",
+    "order": 5,
+    "target": 8,
+    "icon": "🟣",
+    "blurb": "入住、退房、Wi-Fi 密码、热水、空调。民宿 (mehmonxona) 主人常会用乌兹别克语先招呼你。"
+  },
+  {
+    "id": "shopping",
+    "name_zh": "购物砍价",
+    "name_en": "Shopping & Bargain",
+    "name_uz": "Xarid va savdolashish",
+    "color_token": "shopping",
+    "order": 6,
+    "target": 8,
+    "icon": "🟠",
+    "blurb": "Chorsu 巴扎、丝绸、陶器、地毯——砍价从对半开始。用乌兹别克语开口，气氛立刻松弛。"
+  },
+  {
+    "id": "emergency",
+    "name_zh": "应急",
+    "name_en": "Emergency",
+    "name_uz": "Favqulodda holat",
+    "color_token": "emergency",
+    "order": 7,
+    "target": 7,
+    "icon": "⚫",
+    "blurb": "医院、药店、警察、丢东西、过敏。关键时刻一句清楚的求助能救命。"
+  },
+  {
+    "id": "chat",
+    "name_zh": "闲聊 & 文化",
+    "name_en": "Small Talk & Culture",
+    "name_uz": "Suhbat va madaniyat",
+    "color_token": "chat",
+    "order": 8,
+    "target": 7,
+    "icon": "⚪",
+    "blurb": "你从哪来、叫什么、好吃、好看、清真寺礼仪。一两句本地话，你就从「外国游客」变成「会本地话的外国人」。"
+  }
+]
