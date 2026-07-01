@@ -1,0 +1,109 @@
+[
+  {
+    "id": "street.kosmonavtlar",
+    "category": "street",
+    "image": {
+      "src": "/signs/street/kosmonavtlar.webp",
+      "alt": "塔什干地铁 Kosmonavtlar 站站台墙上的西里尔字母站名牌 КОСМОНАВТЛАР",
+      "attribution": {
+        "author": "Adam Harangozó",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Kosmonavtlar_Station_of_Tashkent_Metro_6.jpg",
+        "license": "CC BY-SA 4.0",
+        "via": "Wikimedia Commons"
+      }
+    },
+    "uz_latin": "Kosmonavtlar",
+    "uz_cyrillic": "КОСМОНАВТЛАР",
+    "pronunciation": "kos-mo-navt-LAR",
+    "chinese": "宇航员（地铁站名）",
+    "literal": "kosmonavt 宇航员 + -lar 复数 → 「宇航员们」站",
+    "context": "塔什干地铁站名牌。老站名常只写西里尔——认出字形就能对上线路图。Kosmonavtlar 站以太空 / 宇航为装饰主题。",
+    "local_note": "站台墙上蓝底大字即站名；下一站方向另看黄色指示牌。",
+    "location_hint": "塔什干地铁 Kosmonavtlar 站（宇宙主题）"
+  },
+  {
+    "id": "street.metro_directions",
+    "category": "street",
+    "image": {
+      "src": "/signs/street/metro_directions.webp",
+      "alt": "塔什干地铁站台的黄色方向指示牌与蓝色标语牌",
+      "attribution": {
+        "author": "AXP Photography",
+        "source_url": "https://www.pexels.com/photo/mustakillik-maydoni-subway-station-in-tashkent-19227981/",
+        "license": "Pexels License",
+        "via": "Pexels"
+      }
+    },
+    "uz_latin": "Xalqlar doʻstligi",
+    "pronunciation": "khalq-LAR dost-li-GI",
+    "chinese": "各民族友谊（地铁站名 / 广场名）",
+    "literal": "xalqlar 各民族(xalq+lar) · doʻstligi 友谊(doʻstlik+i)",
+    "context": "站台黄色方向牌列出本方向的下一批站名：Paxtakor、Xalqlar doʻstligi、Milliy bogʻ、Chilonzor、Olmazor…… 认出拉丁站名就能对着线路图走。左侧蓝牌是标语「Ogohlik – davr talabi」（警惕是时代的要求）。",
+    "local_note": "塔什干地铁新指示牌多为拉丁；黄底 = 方向 / 出口指引。",
+    "location_hint": "塔什干地铁 Mustaqillik Maydoni 站"
+  },
+  {
+    "id": "market.dehqon_bozori",
+    "category": "market",
+    "image": {
+      "src": "/signs/market/dehqon_bozori.webp",
+      "alt": "塔什干 Eski Juva 农贸市场入口横幅，写着 ESKI JUVA DEHQON BOZORI",
+      "attribution": {
+        "author": "Talha Kılıç",
+        "source_url": "https://www.pexels.com/photo/bustling-market-scene-in-tashkent-uzbekistan-36748359/",
+        "license": "Pexels License",
+        "via": "Pexels"
+      }
+    },
+    "uz_latin": "Dehqon bozori",
+    "pronunciation": "deh-QON bo-zo-RI",
+    "chinese": "农贸市场（农夫巴扎）",
+    "literal": "dehqon 农夫 / 农民 · bozor 市场 + -i → 「农夫的市场」",
+    "context": "横幅全文「\"Eski Juva Dehqon Bozori\" AJ tomonidan tashkil etilgan savdo rastasi」= 由「旧朱瓦农贸市场」股份公司设立的交易区。看到 Dehqon bozori 就是当地农贸市场。",
+    "local_note": "Eski Juva 在塔什干老城一带；bozor 里现金为王，问价用 Qancha。",
+    "location_hint": "塔什干 · Eski Juva 农贸市场"
+  },
+  {
+    "id": "public.panjob_masjid",
+    "category": "public",
+    "image": {
+      "src": "/signs/public/panjob_masjid_plaque.webp",
+      "alt": "撒马尔罕 Panjob 清真寺入口的三语铭牌（西里尔、拉丁、阿拉伯文）",
+      "attribution": {
+        "author": "Akhemen",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Information_board_(in_Uzbek_language_in_Cyrillic,_Latin_and_Arabic_scripts)_at_the_entrance_to_the_Panjab_Shia_Mosque_in_Samarkand.jpg",
+        "license": "CC BY-SA 4.0",
+        "via": "Wikimedia Commons"
+      }
+    },
+    "uz_latin": "«Panjob» Jomeʼ masjidi",
+    "uz_cyrillic": "«ПАНЖОБ» ЖОМЕЪ МАСЖИДИ",
+    "pronunciation": "pan-JOB jo-ME mas-ji-DI",
+    "chinese": "「潘朱布」聚礼清真寺",
+    "literal": "jomeʼ 聚礼(主麻) · masjid 清真寺 + -i → 主麻大寺",
+    "context": "撒马尔罕一座清真寺入口铭牌，同一句话给出西里尔 + 拉丁 + 阿拉伯三种文字——正好对照拉丁↔西里尔字形。首行「Oʻzbekiston musulmonlari idorasi」= 乌兹别克斯坦穆斯林事务局。",
+    "local_note": "masjid（清真寺）/ jomeʼ masjid（主麻寺）是常见招牌词；进寺脱鞋、着装得体。",
+    "location_hint": "撒马尔罕 · Panjob 清真寺入口"
+  },
+  {
+    "id": "public.bibixonim",
+    "category": "public",
+    "image": {
+      "src": "/signs/public/bibixonim_plaque.webp",
+      "alt": "撒马尔罕 Bibixonim 清真寺铭牌，乌兹别克拉丁文与英文对照",
+      "attribution": {
+        "author": "Faqscl",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Samarkand_Bibi-Khanum_Mosque_-_Entrance_portal_3_Information_panel.JPG",
+        "license": "CC BY-SA 3.0",
+        "via": "Wikimedia Commons"
+      }
+    },
+    "uz_latin": "Bibixonim masjidi",
+    "pronunciation": "bi-bi-kho-NIM mas-ji-DI",
+    "chinese": "比比哈努姆清真寺（14–15 世纪）",
+    "literal": "Bibixonim 比比哈努姆(帖木儿王后) · masjid 清真寺 + -i · asr 世纪 + -lar 复数",
+    "context": "撒马尔罕地标 Bibixonim 清真寺的铭牌，乌兹别克拉丁 + 英文对照。学会 masjidi（清真寺）、asrlar（世纪）两个词，很多古迹铭牌都用得上。",
+    "local_note": "Bibixonim 是帖木儿最宏大的清真寺之一，紧邻 Siyob 巴扎。",
+    "location_hint": "撒马尔罕 · Bibixonim 清真寺"
+  }
+]

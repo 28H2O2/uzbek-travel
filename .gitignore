@@ -2,6 +2,9 @@
 dist/
 .astro/
 
+# signs 图片策展暂存区（候选大图 + 联系表，不入仓）
+scripts/.signs-staging/
+
 # dependencies
 node_modules/
 

@@ -1,0 +1,143 @@
+---
+// 功能：路牌识字页。真实招牌图按 5 个 category 分组展示。纯被动识字训练。
+// 输入：src/data/signs.json
+// 输出：单页面 /signs
+// 依赖：Layout, SignCard, signs.json, types
+// 在项目中的作用：补足短语卡只训练「说 / 听」、未训练「读懂招牌」的缺口。
+//             图片经 ppt-master 的 image_search.py 从 CC 授权源获取，附作者 / 协议 / 回链。
+
+import Layout from '../layouts/Layout.astro';
+import SignCard from '../components/SignCard.astro';
+import type { Sign, SignCategory } from '../lib/types';
+import signsJson from '../data/signs.json';
+
+const signs = signsJson as Sign[];
+
+const CATEGORY_META: Record<SignCategory, { name: string; icon: string; blurb: string }> = {
+  airport: {
+    name: '机场',
+    icon: '✈️',
+    blurb: '塔什干机场指示牌通常三语：乌（拉丁）/ 俄 / 英',
+  },
+  street: {
+    name: '街道 & 地铁',
+    icon: '🚏',
+    blurb: '地铁站名、路牌、方向牌——乌兹别克语拉丁为主，老牌子也有西里尔和俄语',
+  },
+  market: {
+    name: '巴扎 & 超市',
+    icon: '🛒',
+    blurb: 'Bozor（巴扎）/ Kassa（收银）/ Chegirma（打折）这些要一眼认出',
+  },
+  restaurant: {
+    name: '餐厅 & 菜单',
+    icon: '🍽️',
+    blurb: '菜单上 Osh / Somsa / Shashlik / Choy 不会翻译，认形状最快',
+  },
+  public: {
+    name: '公共标识 & 应急',
+    icon: '⚠️',
+    blurb: 'Chiqish（出口）/ Dorixona（药店）/ Kirish（入口）—— 关键时刻能救命',
+  },
+};
+
+const categoryOrder: SignCategory[] = ['airport', 'street', 'market', 'restaurant', 'public'];
+const grouped = categoryOrder.map((cat) => ({
+  cat,
+  meta: CATEGORY_META[cat],
+  cards: signs.filter((s) => s.category === cat),
+}));
+
+const totalSigns = signs.length;
+---
+
+<Layout
+  title="路牌识字 · 乌兹别克语生存包"
+  description="真实塔什干招牌：从机场指示到巴扎价签，看图认字训练。图片来自 CC 授权源，附署名。"
+>
+  {/* 右上角返回 */}
+  <div class="fixed top-3 right-3 z-30 flex gap-2 safe-pt">
+    <a href="/" class="home-tool-link" aria-label="返回首页">← 返回</a>
+  </div>
+
+  {/* 头部 */}
+  <header class="max-w-3xl mx-auto px-4 pt-10 pb-6 md:pt-14 text-center">
+    <p class="text-xs font-sans uppercase tracking-[0.3em] text-muted mb-2">
+      🪧 SIGN LITERACY · KOʻCHANI OʻQING
+    </p>
+    <h1 class="font-serif text-3xl md:text-5xl font-bold text-ink leading-tight">
+      <span class="text-accent">读懂</span> 路牌
+    </h1>
+    <p class="mt-4 text-sm md:text-base text-ink-soft font-serif italic">
+      {totalSigns} 张真实招牌 · 从机场到巴扎
+    </p>
+    <p class="mt-5 text-xs md:text-sm text-muted max-w-2xl mx-auto leading-relaxed">
+      短语卡训练的是嘴和耳朵，但在塔什干 <strong>很多接触来自眼睛</strong>：
+      地铁站名、菜单、机场指示牌、巴扎价签。这里收真实招牌照片，出发前过一遍混眼熟。
+      <br />
+      <span class="block mt-3 text-[0.7rem] leading-relaxed">
+        所有图片经 <strong>ppt-master 的 image_search</strong> 从 CC 授权源（Wikimedia / Openverse / Pexels）获取，
+        每张都附作者署名和协议、回链原图页。本页不评分——只是看图认字。
+      </span>
+    </p>
+  </header>
+
+  {/* 主内容：按 category 分组 */}
+  <main class="max-w-5xl mx-auto px-4 pb-12">
+    {grouped.map(({ cat, meta, cards: catCards }) => (
+      <section class="mb-10" id={`sign-${cat}`}>
+        <div class="flex items-baseline gap-3 mb-1">
+          <span class="text-xl">{meta.icon}</span>
+          <h2 class="font-serif text-2xl font-bold text-ink">{meta.name}</h2>
+          <span class="text-xs text-muted ml-auto font-sans">{catCards.length} 张</span>
+        </div>
+        <p class="text-xs text-muted italic mb-4 ml-8">{meta.blurb}</p>
+        {catCards.length === 0 ? (
+          <p class="text-xs text-muted italic ml-8 py-4">
+            （这一类正在补图，回头见）
+          </p>
+        ) : (
+          <div class="grid gap-4 md:grid-cols-2">
+            {catCards.map((s) => <SignCard sign={s} />)}
+          </div>
+        )}
+      </section>
+    ))}
+  </main>
+
+  {/* 底部说明 */}
+  <footer class="max-w-3xl mx-auto px-4 py-12 text-xs font-sans text-muted text-center space-y-2 leading-relaxed">
+    <p>
+      ⚠ 部分招牌不一定来自塔什干本地——识字的目标是认出乌兹别克语字形，而非地理识别。
+    </p>
+    <p>
+      每张图授权信息见右下角链接 · 跳转原图页核验
+    </p>
+  </footer>
+</Layout>
+
+<style is:global>
+  /* 返回按钮沿用主页小工具链接样式 */
+  .home-tool-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    min-height: 38px;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(255, 250, 240, 0.9);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--card-border);
+    color: var(--ink-soft);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.78rem;
+    line-height: 1;
+    text-decoration: none;
+    transition: background 140ms ease, color 140ms ease;
+  }
+  .home-tool-link:hover {
+    background: var(--paper-soft);
+    color: var(--ink);
+  }
+</style>

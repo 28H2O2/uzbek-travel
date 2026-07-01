@@ -9,14 +9,24 @@ import Layout from '../layouts/Layout.astro';
 import EssentialBar from '../components/EssentialBar.astro';
 import SceneSection from '../components/SceneSection.astro';
 import { getScenes, getCardsByScene, getEssentialCards, getCards } from '../lib/data';
+import signsJson from '../data/signs.json';
 
 const scenes = getScenes();
 const essentials = getEssentialCards(10);
 const totalCards = getCards().length;
 const totalTarget = scenes.reduce((sum, s) => sum + s.target, 0);
+const signsCount = (signsJson as unknown[]).length;
 ---
 
 <Layout>
+  {/* 右上角工具条：路牌识字入口 */}
+  <div class="fixed top-3 right-3 z-30 flex gap-1.5 safe-pt">
+    <a href="/signs" class="home-tool-link" aria-label="路牌识字">
+      <span class="home-tool-icon">🪧</span>
+      <span class="home-tool-text">路牌</span>
+    </a>
+  </div>
+
   {/* 顶部品牌 */}
   <header class="max-w-5xl mx-auto px-4 pt-10 pb-6 md:pt-16 md:pb-10 text-center">
     <p class="text-xs font-sans uppercase tracking-[0.3em] text-muted mb-2">
@@ -29,7 +39,8 @@ const totalTarget = scenes.reduce((sum, s) => sum + s.target, 0);
       乌兹别克语生存包 · 给乌兹别克斯坦旅行者
     </p>
     <p class="mt-4 text-xs md:text-sm text-muted max-w-2xl mx-auto leading-relaxed">
-      {totalCards} / {totalTarget} 张乌兹别克语短语卡 · 拉丁 + 西里尔 + 发音 + 中文<br />
+      {totalCards} / {totalTarget} 张乌兹别克语短语卡 · 拉丁 + 西里尔 + 发音 + 中文
+      {signsCount > 0 && (<> · <a href="/signs" class="underline hover:text-accent">{signsCount} 张真实路牌 🪧</a></>)}<br />
       含对方可能的回话、可替换槽、当地注脚 · 说一句本地话，从「外国游客」变成「会本地话的外国人」
     </p>
   </header>
@@ -94,3 +105,41 @@ const totalTarget = scenes.reduce((sum, s) => sum + s.target, 0);
     </p>
   </footer>
 </Layout>
+
+<style is:global>
+  /* 右上角小工具链接（路牌识字入口） */
+  .home-tool-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    min-width: 38px;
+    min-height: 38px;
+    padding: 0.35rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(255, 250, 240, 0.9);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--card-border);
+    color: var(--ink-soft);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.78rem;
+    line-height: 1;
+    text-decoration: none;
+    transition: background 140ms ease, color 140ms ease;
+  }
+  .home-tool-icon {
+    font-size: 1.05rem;
+    line-height: 1;
+  }
+  .home-tool-text {
+    display: none; /* mobile：纯 emoji；≥ sm 显文字 */
+  }
+  @media (min-width: 640px) {
+    .home-tool-link { padding: 0.4rem 0.85rem; }
+    .home-tool-text { display: inline; }
+  }
+  .home-tool-link:hover {
+    background: var(--paper-soft);
+    color: var(--ink);
+  }
+</style>
