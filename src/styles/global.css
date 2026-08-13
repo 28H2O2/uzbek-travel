@@ -89,6 +89,13 @@ body {
     var(--paper);
 }
 
+/* hidden 兜底：Tailwind preflight 被关闭（applyBaseStyles:false），
+   UA 的 [hidden]{display:none} 会被 .flex 等作者级 display 覆盖，
+   导致加了 hidden 的卡片仍可见。用 !important 兜底（覆盖 card / section / 空状态）。 */
+[hidden] {
+  display: none !important;
+}
+
 /* 乌兹别克语拉丁主行 */
 .latin {
   font-feature-settings: 'liga' 1, 'kern' 1;

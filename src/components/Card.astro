@@ -25,6 +25,21 @@ const hasDetail =
   card.likely_responses.length > 0 ||
   card.slots.length > 0 ||
   !!card.local_note;
+
+// 搜索索引：把可检索字段拼成一段文本，供 SearchBar 客户端过滤
+const searchText = [
+  card.latin,
+  card.cyrillic,
+  card.pronunciation,
+  card.chinese,
+  card.literal,
+  card.register_note,
+  card.local_note,
+  ...card.slots.flatMap((s) => [s.label, s.swap, s.trans]),
+  ...card.likely_responses.flatMap((r) => [r.latin, r.cyrillic, r.trans, r.cn]),
+]
+  .filter((x): x is string => typeof x === 'string' && x.length > 0)
+  .join(' ');
 ---
 
 <article
@@ -32,6 +47,7 @@ const hasDetail =
   style={`border-left: 4px solid ${sceneAccent};`}
   data-card-id={card.id}
   data-expanded="false"
+  data-search={searchText}
 >
   {/* 顶部：礼貌徽章 + 验证状态 + 右侧切换器 */}
   <header class="flex items-start justify-between gap-2 mb-2">

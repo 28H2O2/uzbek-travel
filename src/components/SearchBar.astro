@@ -1,0 +1,192 @@
+---
+// 功能：短语搜索条。粘性搜索框，输入即时过滤首页所有短语卡。
+// 输入：DOM 中带 data-search 的 article.card（由 Card.astro 输出）；index.astro 里的 #search-empty 与 #scene-nav
+// 输出：一个 role=search 的搜索框 + 全局过滤脚本
+// 依赖：无（原生 JS）；依赖 global.css 的 [hidden]{display:none!important} 兜底
+// 在项目中的作用：让用户「想到要说什么」时随手一搜，免去逐场景翻找
+---
+
+<div role="search" class="search-bar">
+  <div class="relative max-w-5xl mx-auto pl-3 pr-14 pt-2 pb-1">
+    <span class="search-icon" aria-hidden="true">🔍</span>
+    <input
+      id="search-input"
+      type="text"
+      inputmode="search"
+      enterkeyhint="search"
+      autocomplete="off"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="false"
+      placeholder="搜中文 / 乌语：谢谢 · 多少钱 · Wi-Fi · 医院"
+      aria-label="搜索短语"
+      class="search-input"
+    />
+    <button
+      id="search-clear"
+      type="button"
+      class="search-clear"
+      aria-label="清空搜索"
+      hidden
+    >✕</button>
+  </div>
+  <p id="search-count" class="search-count max-w-5xl mx-auto pl-4 pr-4 pb-1" aria-live="polite"></p>
+</div>
+
+<style is:global>
+  .search-icon {
+    position: absolute;
+    left: 0.95rem;
+    top: calc(50% - 0.1rem);
+    transform: translateY(-50%);
+    font-size: 0.95rem;
+    pointer-events: none;
+    opacity: 0.75;
+  }
+  .search-input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0 2.5rem 0 2.35rem;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.95rem;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--card-border);
+    border-radius: 999px;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .search-input::placeholder {
+    color: var(--muted);
+    opacity: 0.8;
+  }
+  .search-input:focus {
+    background: var(--card-bg);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(31, 138, 112, 0.15);
+  }
+  .search-clear {
+    position: absolute;
+    right: 0.55rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.7rem;
+    height: 1.7rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .search-clear:hover {
+    background: var(--card-border);
+    color: var(--ink-soft);
+  }
+  .search-count {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.72rem;
+    color: var(--accent);
+  }
+  .search-count:empty {
+    display: none;
+  }
+</style>
+
+<script>
+  (() => {
+    const STRIP = /[ʻʼ'’‘´-]/g;
+    const PUNCT = /[？！。，、：；,.!?;:·…—–()[\]{}“”"'«»「」《》]/g;
+
+    function norm(s: string | undefined): string {
+      return String(s || '')
+        .toLowerCase()
+        .replace(STRIP, '')
+        .replace(PUNCT, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    const inputEl = document.getElementById('search-input') as HTMLInputElement | null;
+    if (!inputEl) return;
+    const input: HTMLInputElement = inputEl;
+
+    const clearBtn = document.getElementById('search-clear') as HTMLButtonElement | null;
+    const countEl = document.getElementById('search-count');
+    const emptyEl = document.getElementById('search-empty');
+    const navEl = document.getElementById('scene-nav');
+    const essentialBar = document.getElementById('essential-bar');
+
+    const items = Array.from(
+      document.querySelectorAll<HTMLElement>('article.card[data-search]')
+    ).map((el) => ({ el, hay: norm(el.dataset.search) }));
+
+    const sections = Array.from(
+      document.querySelectorAll<HTMLElement>('section')
+    ).filter((s) => !!s.querySelector('article.card[data-search]'));
+
+    function restore(): void {
+      items.forEach((it) => (it.el.hidden = false));
+      sections.forEach((s) => (s.hidden = false));
+      if (navEl) navEl.hidden = false;
+      if (essentialBar) essentialBar.hidden = false;
+      if (emptyEl) emptyEl.hidden = true;
+      if (countEl) countEl.textContent = '';
+      if (clearBtn) clearBtn.hidden = true;
+    }
+
+    function apply(): void {
+      const q = norm(input.value);
+      const tokens = q ? q.split(' ').filter(Boolean) : [];
+
+      if (tokens.length === 0) {
+        restore();
+        return;
+      }
+
+      let visible = 0;
+      items.forEach((it) => {
+        const match = tokens.every((t) => it.hay.indexOf(t) !== -1);
+        it.el.hidden = !match;
+        if (match) visible += 1;
+      });
+
+      sections.forEach((s) => {
+        const n = s.querySelectorAll('article.card:not([hidden])').length;
+        s.hidden = n === 0;
+      });
+
+      if (navEl) navEl.hidden = true;
+      if (essentialBar) essentialBar.hidden = true;
+      if (emptyEl) emptyEl.hidden = visible !== 0;
+      if (countEl) countEl.textContent = '找到 ' + visible + ' 张';
+      if (clearBtn) clearBtn.hidden = false;
+    }
+
+    let timer: number | undefined;
+    input.addEventListener('input', () => {
+      if (timer !== undefined) clearTimeout(timer);
+      timer = window.setTimeout(apply, 120);
+    });
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        input.value = '';
+        restore();
+        input.focus();
+      });
+    }
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        input.value = '';
+        apply();
+      }
+    });
+  })();
+</script>

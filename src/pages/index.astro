@@ -8,6 +8,7 @@
 import Layout from '../layouts/Layout.astro';
 import EssentialBar from '../components/EssentialBar.astro';
 import SceneSection from '../components/SceneSection.astro';
+import SearchBar from '../components/SearchBar.astro';
 import { getScenes, getCardsByScene, getEssentialCards, getCards } from '../lib/data';
 import signsJson from '../data/signs.json';
 
@@ -45,12 +46,14 @@ const signsCount = (signsJson as unknown[]).length;
     </p>
   </header>
 
-  {/* 场景跳转条 — 粘性 */}
-  <nav
+  {/* 搜索 + 场景跳转 — 粘性 */}
+  <div
     class="sticky top-0 z-20 bg-paper/95 backdrop-blur-sm border-b border-card-border"
-    aria-label="场景跳转"
   >
-    <div class="max-w-5xl mx-auto px-3 py-2 overflow-x-auto">
+    <SearchBar />
+
+    <nav id="scene-nav" aria-label="场景跳转">
+      <div class="max-w-5xl mx-auto px-3 py-2 overflow-x-auto">
       <ul class="flex gap-1.5 whitespace-nowrap text-sm font-sans">
         <li>
           <a
@@ -77,12 +80,21 @@ const signsCount = (signsJson as unknown[]).length;
           );
         })}
       </ul>
-    </div>
-  </nav>
+      </div>
+    </nav>
+  </div>
 
   {/* 主内容 */}
   <main class="max-w-5xl mx-auto px-4 pt-8">
     <EssentialBar cards={essentials} />
+
+    <div
+      id="search-empty"
+      hidden
+      class="rounded-card border border-dashed border-card-border p-8 mb-12 text-center text-sm text-muted font-sans"
+    >
+      🔍 没找到。换个词试试，或点搜索框里的 ✕ 回到全部卡片。
+    </div>
 
     {scenes.map((s) => (
       <SceneSection scene={s} cards={getCardsByScene(s.id)} />
